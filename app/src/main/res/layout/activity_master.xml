@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Master">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/imageView_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:adjustViewBounds="true"
+            android:maxWidth="180dp"
+            app:srcCompat="@drawable/osd" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView_app_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView_logo"
+        android:text="One Stop DashBoard"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+    <TextView
+        android:id="@+id/textView_main_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView_app_name"
+        android:layout_marginTop="10dp"
+        android:text="Welcome!"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Menu" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3">
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/thingstd"
+            style="@style/Widget.Material3.Button.ElevatedButton"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="12dp"
+            android:shadowDx="6"
+            android:shadowDy="6"
+            android:text="Things\nTo Do"
+            android:textColor="@color/text"
+
+            android:textSize="16dp" />
+
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.Material3.Button.ElevatedButton"
+            android:layout_width="108dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+
+            android:layout_marginLeft="12dp"
+            android:shadowDx="6"
+            android:shadowDy="6"
+            android:text="Vendors"
+            android:textColor="@color/text"
+            android:textSize="15dp" />
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.Material3.Button.ElevatedButton"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="12dp"
+            android:shadowDx="12"
+            android:shadowDy="12"
+            android:layout_marginTop="10dp"
+
+            android:text="Rents"
+
+            android:textColor="@color/text"
+            android:textSize="16dp" />
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.Material3.Button.ElevatedButton"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="12dp"
+            android:shadowDx="12"
+            android:shadowDy="12"
+            android:textColor="@color/text"
+            android:textSize="16dp" />
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.Material3.Button.ElevatedButton"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="12dp"
+            android:shadowDx="12"
+            android:shadowDy="12"
+            android:textColor="@color/text"
+            android:textSize="16dp" />
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.Material3.Button.ElevatedButton"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="12dp"
+            android:shadowDx="12"
+            android:shadowDy="12"
+            android:textColor="@color/text"
+            android:textSize="16dp" />
+
+    </GridLayout>
+
+
+</LinearLayout>
